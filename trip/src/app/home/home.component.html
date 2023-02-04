@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+  
+body  {
+  background-image: url("assets/Travel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;  
+  background-size: cover; 
+  
+  
+  width: 100vw;
+  height: 100vh;
+
+}
+</style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><h1 class="">PLAN MY TRIP</h1></div>
+    <div class="menu">
+    
+        
+        
+        <a routerLink="/hotel">Hotel</a>
+        <!-- <a routerLink="/flight">Flight</a>
+        <a routerLink="/bus">Bus</a> -->
+        <a routerLink="/login">Log Out</a>
+        <a routerLink="/mybooking">Booking Details</a>
+       
+
+
+    </div>
+
+</nav>
+<h1>HOLIDAY PACKAGES</h1>
+
+
+
+<!-- <div class="container">
+ <div class="row gy-3" >
+  <ng-container *ngFor="let item of packagelist">
+     <div class="col-sm-6 col-md-3"  >
+  
+<div class="card" style="width: 18rem; height: 20rem;" >
+     <img src="{{item.textImage}}" class="card-img-top" alt="..." > 
+    <div class="card-body">
+      <h5 class="card-title">{{item.City}}</h5>
+      <p class="card-text">{{item.Price}}</p>
+      <a href="/available" class="btn btn-primary">Book Now</a>
+    </div>
+</div>
+    </div>  
+
+</ng-container> -->
+<div class="row gy-3">
+     <div class="col-sm-6 col-md-3"  >
+  
+      <div class="card" style="width: 18rem; height: 20rem;" >
+          <img src="assets/delhi.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">DELHI</h5>
+            <p class="card-text">Starting at Rs.17000 per person</p>
+            <a href="/available" class="btn btn-primary">Book Now</a>
+          </div>
+      </div>
+          </div>
+     <div class=" col-sm-6 col-md-3">
+  
+        <div class="card" style="width: 18rem; height: 20rem;" >
+            <img src="assets/mumbai.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MUMBAI</h5>
+              <p class="card-text">Starting at Rs.27000 per person</p>
+              <a href="/available" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+            </div>
+
+            <div class=" col-sm-6 col-md-3">
+  
+                <div class="card" style="width: 18rem; height: 20rem; " >
+                    <img src="assets/292138307.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">SHIMLA</h5>
+                      <p class="card-text">Starting at Rs.10000 per person</p>
+                      <a href="/available" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+                    </div>
+            
+                    <div class="col-sm-6 col-md-3">
+  
+                        <div class="card" style="width: 18rem; height: 20rem;" >
+                            <img src="assets/Kolkata-City-Profile.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">KOLKATA</h5>
+                              <p class="card-text">Starting at Rs.9000 per person</p>
+                              <a href="/available" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                            </div>
+
+
+                            <div class="col-sm-6 col-md-3">
+  
+                              <div class="card" style="width: 18rem; height: 20rem;" >
+                                  <img src="assets/ayodhya.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">AYODHYA</h5>
+                                    <p class="card-text">Starting at Rs.9000 per person</p>
+                                    <a href="/available" class="btn btn-primary">Book Now</a>
+                                  </div>
+                              </div>
+                                  </div>
+
+                                  <div class="col-sm-6 col-md-3">
+  
+                                    <div class="card" style="width: 18rem; height: 20rem;" >
+                                        <img src="assets/goa.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">GOA</h5>
+                                          <p class="card-text">Starting at Rs.9000 per person</p>
+                                          <a href="/available" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-md-3">
+  
+                                          <div class="card" style="width: 18rem; height: 20rem;" >
+                                              <img src="assets/uttrakhand.jpg" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">UTTARAKHAND</h5>
+                                                <p class="card-text">Starting at Rs.9000 per person</p>
+                                                <a href="/available" class="btn btn-primary">Book Now</a>
+                                              </div>
+                                          </div>
+                                              </div>
+
+                                              <div class="col-sm-6 col-md-3">
+  
+                                                <div class="card" style="width: 18rem; height: 20rem;" >
+                                                    <img src="assets/kerela.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">KERELA</h5>
+                                                      <p class="card-text">Starting at Rs.9000 per person</p>
+                                                      <a href="/available" class="btn btn-primary">Book Now</a>
+                                                    </div>
+                                                </div>
+                                                    </div> 
+
+                                                    <div class="container row gy-3 "  >
+ 
+                                                      <ng-container *ngFor="let item of packagelist">
+                                                      <div class="card col-md-3" style="width: 18rem; height: 20rem;" >
+                                                        <img src="assets/292138307.jpg" class="card-img-top" alt="...">
+                                                        <h5 class="card-title">{{item.City}}</h5>
+                                                        <p class="card-text">{{item.Description}}</p>
+                                                        <a href="/available" class="btn btn-primary">Book Now</a>
+                                                      </div>
+                                                    </ng-container>
+                                                    </div> 
+                                                              
+                                                    </div>
+                     
+  <!-- </div>
+</div> -->
+
+
+
+
+</body>
+</html>

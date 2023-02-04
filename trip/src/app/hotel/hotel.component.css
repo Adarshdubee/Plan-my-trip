@@ -1,0 +1,16 @@
+.card{
+    margin-top: 15px;
+    border: 1px solid blue;
+    width: 550px;
+    padding: 45px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+/* .hotel{
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: honeydew;
+} */

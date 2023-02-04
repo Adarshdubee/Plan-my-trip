@@ -1,0 +1,21 @@
+<h1>List of Bookings</h1>
+<div class="container">
+ <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th scope="col">NAME</th>
+        <th scope="col">Mobile No.</th>
+        <th scope="col">Email</th>
+        <th scope="col">Number of Person</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mybooking of book" >
+        <th scope="row">{{mybooking.name}}</th>
+        <td>{{mybooking.mobileNo}}</td>
+        <td>{{mybooking.email}}</td>
+        <td>{{mybooking.number}}</td>
+      </tr>
+    </tbody>
+</table> 
+ </div>

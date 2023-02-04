@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="text-center">
+            <h1> ADMIN SIGN UP</h1>
+            <h5>Get Free Member Ship</h5><hr>
+            <form [formGroup]="signupform" (ngSubmit)="adminsignUp()">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">First Name</label>
+                <input formControlName="FirstName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Last Name</label>
+                <input formControlName="LastName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Email address</label>
+                <input formControlName="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Password</label>
+                <input formControlName="Password" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Confirm Password</label>
+                <input formControlName="ConfirmPassword" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              
+              <button type="submit" onclick="adminsignUp()"  class="btn btn-primary">Signup</button>
+            </form>
+            <a routerLink="/admin-login">Already Member ? Click to Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

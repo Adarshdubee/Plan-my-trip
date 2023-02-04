@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>SIGN UP</h1>
+          <h5>Get Free Member Ship</h5><hr>
+          <form [formGroup]="signupform" (ngSubmit)="signUp()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">First Name</label>
+              <input formControlName="FirstName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Last Name</label>
+              <input formControlName="LastName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Email address</label>
+              <input formControlName="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Password</label>
+              <input formControlName="Password" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Confirm Password</label>
+              <input formControlName="ConfirmPassword" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" onclick="signUp()"  class="btn btn-primary">Signup</button>
+          </form>
+          <a routerLink="/login">Already Member ? Click to Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+  
+body  {
+  background-image: url("assets/Travel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+  width: 100vw;
+  height: 100vh;
+
+}
+</style>
+</head>
+<body>
+<div class="Signup-box">
+<h1>Plan my Trip</h1>
+<h2>Sign up page</h2>
+<form  >
+  <label for="fname">First name:</label>
+  <input type="text" id="fname"  placeholder="First Name"><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname"  placeholder="Last Name"><br>
+  <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email"  required><br>
+
+    <label for="psw">Password</label>
+    <input type="password" placeholder="Enter Password"  required><br><br>
+    <label for="psw">Confirm Password</label>
+    <input type="password" placeholder="Enter Password"  required><br><br>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+<p>By clicking sing up button,you agree to our <br>
+<a href="#">Terms and Conditons</a><br>
+</p>
+</div>
+<p class="para-2">Already have an account?<a routerLink="/login">Login here</a></p>
+</body>
+</html> -->

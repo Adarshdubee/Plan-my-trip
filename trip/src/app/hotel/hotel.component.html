@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+  
+body  {
+  background-image: url("assets/Travel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+  width: 100vw;
+  height: 100vh;
+
+}
+</style>
+</head>
+<body>
+    <div class="hotel">
+    <h1>Plan my Trip</h1>
+    <h2>Hotel booking page</h2>
+    <form >
+        <label for="city">CITY</label><br>
+        <input type="text" placeholder="CITY" name="CITY" required><br>  
+   <label for="date">CHECK-IN</label><br>
+    <input type="date" placeholder="DATE" name="DATE" 
+    required><br>
+    <label for="date">CHECK-OUT</label><br>
+    <input type="date" placeholder="DATE" name="DATE" 
+    required><br>
+
+   
+    <input type="button" value="Submit">
+</form>
+</div>
+
+</body>
+</html> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>HOTEL BOOKING</h1>
+          <h5>Feel Free to BOOK</h5><hr>
+          <form [formGroup]="hotelform" (ngSubmit)="hotel()">
+            <div class="mb-3">
+              <label  class="form-label">CITY</label>
+              <input type="text" formControlName="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">CHECK-IN</label>
+              <input type="date" formControlName="" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">CHECK-OUT</label>
+              <input type="date" formControlName="" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
